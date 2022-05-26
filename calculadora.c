@@ -11,26 +11,30 @@ void main()
     scanf("%f", &valor1);
     printf("Escreva o segundo valor \n");
     scanf("%f", &valor2);
-    printf("------CALCULADORA----- \n");
-    printf("\n Opcao 1 - Somar \n Opcao 2 - Subtrair \n Opcao 3 - Multiplicar \n Opcao 4 - Dividir \n");
-    scanf("%d", &opcao);
-    switch (opcao)
+    while (opcao < 1 || opcao > 4)
     {
-    case 1:
-        printf("Resultado da soma: %.2f \n", valor1 + valor2);
-        break;
-    case 2:
-        printf("Resultado da subtracao: %.2f \n", valor1 - valor2);
-        break;
-    case 3:
-        printf("O resultado da multiplicacao: %.2f \n", valor1 * valor2);
-        break;
-    case 4:
-        printf("O valor da divisao: %.2f \n", valor1 / valor2);
+        printf("------CALCULADORA----- \n");
+        printf("\n Opcao 1 - Somar \n Opcao 2 - Subtrair \n Opcao 3 - Multiplicar \n Opcao 4 - Dividir \n");
+        scanf("%d", &opcao);
 
-    default:
-        printf("Opcao invalida \n");
+        switch (opcao)
+        {
+        case 1:
+            printf("Resultado da soma: %.2f \n", valor1 + valor2);
+            break;
+        case 2:
+            printf("Resultado da subtracao: %.2f \n", valor1 - valor2);
+            break;
+        case 3:
+            printf("O resultado da multiplicacao: %.2f \n", valor1 * valor2);
+            break;
+        case 4:
+            printf("O valor da divisao: %.2f \n", valor1 / valor2);
 
-        break;
+        default:
+            printf("Opcao invalida \n");
+
+            break;
+        }
     }
 }

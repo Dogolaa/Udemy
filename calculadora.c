@@ -34,5 +34,3 @@ void main()
         break;
     }
 }
- git config --global user.email "lucasdogo01@gmail.com"
-  git config --global user.name "Dogola"

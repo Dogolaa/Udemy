@@ -1,15 +1,17 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-void main(){
-     int vetor[10], cont;
-    
-     for(cont = 0; cont < 10; cont++){
-         printf ("Digite o valor do vetor %d", cont);
-         scanf ("%d", vetor[cont]);
-     }
-  
-}
+void main()
+{
+    int vetor[10], cont;
 
-git config --global user.email lucasdogo01@gmail.com
-  git config --global user.name Dogola
+    for (cont = 0; cont < 10; cont++)
+    {
+        printf("Digite o valor do vetor %d \n", cont);
+        scanf("%d", &vetor[cont]);
+    }
+    for (cont = 0; cont < 10; cont++)
+    {
+        printf("O valor do vetor %d eh: %d \n", cont, vetor[cont]);
+    }
+}
